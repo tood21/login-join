@@ -1,0 +1,210 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+/* util */
+
+body {
+  background-color: #e5e5e5;
+}
+
+#app {
+  background-color: white;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  padding: 20px 24px 25px 24px;
+  font-size: 16px;
+  width: 520px;
+  height: 712px;
+  border: 1px solid #c4c4c4;
+  margin: 50px auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.header {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.header .header-tit {
+  display: inline-block;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  border: 1px solid #c4c4c4;
+  position: absolute;
+  width: 520px;
+  top: 38px;
+  left: -24px;
+}
+
+.close-img {
+  float: right;
+}
+
+.login-tit{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.login-input__id {
+  box-sizing: border-box;
+  width: 472px;
+  height: 50px;
+  margin-bottom: 10px;
+  padding-left: 16px;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+}
+
+.login-input__pass {
+  box-sizing: border-box;
+  width: 472px;
+  height: 50px;
+  padding-left: 16px;
+  margin-bottom: 17px;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+[type="checkbox"] + label {
+  cursor: pointer;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-image: url("../images/check-box.png");
+}
+
+[type="checkbox"]:checked + label {
+  background-image: url("../images/check-box2.png");
+}
+
+.checker-label {
+  line-height: 20px;
+}
+
+.login-btn {
+  font-size: 18px;
+  width: 472px;
+  height: 50px;
+  background-color: #2f80ed;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+  margin-top: 21px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.link {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.link__join,
+.link__id {
+  text-decoration: none;
+  color: #767676;
+  font-size: 14px;
+}
+
+.link__join::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  background-color: #767676;
+  margin: 0 12px;
+  vertical-align: bottom;
+}
+
+.div-line {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #767676;
+}
+
+.div-line__txt {
+  margin: 0 12px;
+}
+
+.div-line::after,
+.div-line::before {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 206px;
+  background-color: #c4c4c4;
+  vertical-align: middle;
+}
+.sns-line {
+  box-sizing: border-box;
+  display: block;
+  text-decoration: none;
+  color: #767676;
+  font-weight: 500;
+  margin-bottom: 10px;
+  width: 472px;
+  height: 50px;
+  line-height: 20px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px 0;
+  position: relative;
+}
+
+.google-login {
+  border: 1px solid #767676;
+}
+
+.facebook-login {
+  border: 1px solid #2d9cdb;
+}
+
+.naver-login {
+  border: 1px solid #00bf18;
+}
+
+.kakao-login {
+  border: 1px solid #f2c94c;
+  margin-bottom: 0;
+}
+
+.google-login::after,
+.facebook-login::after,
+.naver-login::after,
+.kakao-login::after {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  margin-top: -14px;
+}
+
+.google-login::after {
+  background-image: url(../images/Google__G__Logo\ 1.png);
+}
+
+.facebook-login::after {
+  background-image: url(../images/facebook.png);
+}
+
+.naver-login::after {
+  background-image: url(../images/naver-logo.png);
+}
+
+.kakao-login::after {
+  background-image: url(../images/message-circle.png);
+}
